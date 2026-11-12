@@ -1,0 +1,36 @@
+Meridian Screen — 7 inch Waveshare, 8MB
+
+Board: ESP32S3 Dev Module
+Upload Speed: 921600
+USB Mode: Hardware CDC and JTAG
+USB CDC On Boot: Disabled
+USB Firmware MSC On Boot: Disabled
+USB DFU On Boot: Disabled
+Upload Mode: UART0 / Hardware CDC
+CPU Frequency: 240MHz (WiFi)
+Flash Mode: QIO 80MHz
+Flash Size: 8MB (64Mb)
+Partition Scheme: 8M with spiffs (3MB APP/1.5MB SPIFFS)
+PSRAM: OPI PSRAM
+Core Debug Level: None
+Erase All Flash Before Sketch Upload: Disabled
+JTAG Adapter: Disabled
+Arduino Runs On: Core 1
+Events Run On: Core 1
+Zigbee Mode: Disabled
+
+Do not choose the 16MB flash size. Do not choose the 16MB partition.
+PSRAM execute-in-place stays off.
+
+Upload
+  Slide the switch to UART1. That connects the chip to the UART socket.
+  The cable stays in the socket marked UART.
+  Do not hold BOOT.
+  Click Upload. When it finishes, press RESET once.
+
+Screen line, already in meridian.ino
+  Clock 12500000
+  Bounce 800 * 10
+  Porches 0, 8, 4, 8 and 0, 8, 4, 8
+  Pins DE 5, VSYNC 3, HSYNC 46, PCLK 7
+  LCD reset pulses before the RGB clock.
